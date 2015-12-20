@@ -21,8 +21,10 @@ RSpec.describe EventsController, type: :controller do
   end
 
   describe 'GET #show' do
-    before(:all) { @event = create(:event) }
-    before(:each) { get :show, id: @event.id }
+    before(:each) do
+      @event = create(:event)
+      get :show, id: @event.id
+    end
 
     it 'responds successfully with HTTP 200 code' do
       expect(response).to be_success
