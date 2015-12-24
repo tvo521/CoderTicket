@@ -6,9 +6,9 @@ Submitted by: Toan Vo
 
 Time spent: 40 hours
 
-URL: **Insert your Heroku URL here**
+URL: https://obscure-bastion-5749.herokuapp.com/
 
-SimpleCov Test Coverage: [499 / 506 LOC (98.62%) covered](https://github.com/tvo521/CoderTicket/blob/master/coverage/index.html)
+SimpleCov Test Coverage: [499 / 506 LOC (98.62%) covered](https://rawgit.com/tvo521/CoderTicket/master/coverage/index.html)
 
 ## User Stories
 
