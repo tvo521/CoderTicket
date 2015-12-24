@@ -1,11 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe TicketsController, type: :controller do
+  let(:event) { create(:event) }
+
   describe 'GET #new' do
-    before(:each) do
-      @event = create(:event)
-      get :new, event_id: @event.id
-    end
+    before(:each) { get :new, event_id: event.id }
 
     it 'responds successfully with HTTP 200 code' do
       expect(response).to be_success
@@ -17,7 +16,7 @@ RSpec.describe TicketsController, type: :controller do
     end
 
     it 'loads correct event' do
-      expect(assigns(:event).name).to eq(@event.name)
+      expect(assigns(:event).name).to eq(event.name)
     end
   end
 end

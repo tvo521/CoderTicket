@@ -7,4 +7,3 @@ tmp/
 .localized
 .byebug_history
 config/database.yml
-coverage/

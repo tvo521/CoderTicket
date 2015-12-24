@@ -2,6 +2,11 @@ require 'rails_helper'
 
 RSpec.describe EventsController, type: :controller do
   describe 'GET #index' do
+    before(:all) do
+      Event.destroy_all
+      @events = create_list(:event, 2)
+    end
+
     it 'responds successfully with HTTP 200 code' do
       get :index
       expect(response).to be_success
@@ -13,10 +18,18 @@ RSpec.describe EventsController, type: :controller do
       expect(response).to render_template('index')
     end
 
-    it 'loads all events' do
-      events = create_list(:event, 2)
-      get :index
-      expect(assigns(:events).count).to eq(events.count)
+    context 'when user searches' do
+      it 'should load specific events' do
+        post :index, search: @events.first.name
+        expect(assigns(:events).first.name).to eq(@events.first.name)
+      end
+    end
+
+    context 'when user does not search' do
+      it 'should load all events' do
+        get :index
+        expect(assigns(:events).count).to eq(2)
+      end
     end
   end
 

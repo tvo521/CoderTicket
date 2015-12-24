@@ -1,26 +1,26 @@
-# Homework 3 - *Name of App*
+# Homework 3 - CoderTicket
 
-**Name of your app** is a Ruby on Rails blog application that allows users to create and buy tickets to cool events. 
+CoderTicket is a Ruby on Rails blog application that allows users to create and buy tickets to cool events. 
 
-Submitted by: **Your Name Here**
+Submitted by: Toan Vo
 
-Time spent: **X** hours
+Time spent: 40 hours
 
 URL: **Insert your Heroku URL here**
 
-SimpleCov Test Coverage: **Insert percentage or link to report here**
+SimpleCov Test Coverage: [499 / 506 LOC (98.62%) covered](https://github.com/tvo521/CoderTicket/blob/master/coverage/index.html)
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
+* [x] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
 
 #### Events
 
-* [ ] Users can see a list of upcoming events. Past events should not be shown. **HINT**: Good candidate for a test.
-* [ ] Users can search for events from the homepage.
-* [ ] Users can click on an event to see details about the event. 
+* [x] Users can see a list of upcoming events. Past events should not be shown. **HINT**: Good candidate for a test.
+* [x] Users can search for events from the homepage.
+* [x] Users can click on an event to see details about the event. 
 * [ ] Users can click on "Book Now" to go to a page to purchase tickets.
 
 #### Tickets
@@ -33,8 +33,8 @@ The following **required** functionality is complete:
 
 #### Users
 
-* [ ] User can sign up by providing their email, password, and name. 
-* [ ] User can login using an email and password. 
+* [x] User can sign up by providing their email, password, and name. 
+* [x] User can login using an email and password. 
 * [ ] Users can create events. 
 * [ ] Users must click "publish event" before an event becomes viewable to other users. 
 * [ ] Users can create ticket types for that event. 
@@ -55,11 +55,15 @@ The following **required** functionality is complete:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Describe any challenges encountered while building the app:
+
+* Setup and configuring spec is tricky.
+* Preparing test data becomes complicated when models grow up with various relationships.
+* Writing tests to cover code takes more time.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2015 Toan Vo
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

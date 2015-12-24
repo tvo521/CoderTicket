@@ -12,6 +12,7 @@ gem 'bcrypt'
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
+gem 'font-kit-rails'
 
 gem 'pg'
 gem 'bootstrap-sass'
