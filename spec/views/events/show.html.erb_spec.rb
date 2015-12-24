@@ -8,7 +8,7 @@ RSpec.describe 'events/show', type: :view do
   end
 
   it 'displays number of ticket types correctly' do
-    expect(rendered).to have_css('div.sidebar .ticket-list .pull-left', count: 3)
+    expect(rendered).to have_css('div.sidebar .ticket-list .row', count: 3)
   end
 
   it 'has booking link' do
